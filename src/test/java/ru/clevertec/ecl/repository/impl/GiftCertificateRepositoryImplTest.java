@@ -1,7 +1,5 @@
 package ru.clevertec.ecl.repository.impl;
 
-import org.assertj.core.api.Assertions;
-
 import org.hibernate.SessionFactory;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -25,6 +23,7 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
 import static org.junit.jupiter.api.Assertions.assertAll;
 
 @SpringJUnitConfig(DataBaseConfig.class)
@@ -195,7 +194,7 @@ class GiftCertificateRepositoryImplTest {
         }
 
         @Test
-        void checkSaveShouldReturnGiftCertificate() {
+        void checkUpdateShouldReturnGiftCertificate() {
             GiftCertificate actualGiftCertificate = giftCertificateRepository.update(giftCertificate);
 
             assertAll(() -> {

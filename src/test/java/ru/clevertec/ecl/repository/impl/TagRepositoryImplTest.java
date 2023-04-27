@@ -1,7 +1,5 @@
 package ru.clevertec.ecl.repository.impl;
 
-import org.assertj.core.api.Assertions;
-
 import org.hibernate.SessionFactory;
 import org.hibernate.exception.ConstraintViolationException;
 
@@ -22,6 +20,7 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
 import static org.junit.jupiter.api.Assertions.assertAll;
 
 @SpringJUnitConfig(DataBaseConfig.class)
@@ -49,6 +48,7 @@ class TagRepositoryImplTest {
 
     @Nested
     class TagRepositoryImplFindByIdTest {
+
         @Test
         void checkFindByIdShouldReturnNotEmptyOptionalTag() {
             Long expectedId = 1L;

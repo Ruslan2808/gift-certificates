@@ -1,13 +1,16 @@
 package ru.clevertec.ecl.service.impl;
 
 import org.assertj.core.api.Assertions;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+
 import ru.clevertec.ecl.dto.gift_certificate.GiftCertificateRequest;
 import ru.clevertec.ecl.dto.gift_certificate.GiftCertificateResponse;
 import ru.clevertec.ecl.dto.tag.TagRequest;
@@ -34,7 +37,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.Assertions.within;
+
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.verify;
 
@@ -335,7 +341,7 @@ class GiftCertificateServiceImplTest {
         }
 
         @Test
-        void checkUpdateShouldReturnUpdatedGiftCertificate() {
+        void checkUpdateShouldReturnGiftCertificate() {
             doReturn(Optional.of(giftCertificate)).when(giftCertificateRepository).findById(id);
             doReturn(tag).when(tagMapper).mapToTag(tagRequest);
             doReturn(giftCertificateResponse).when(giftCertificateMapper).mapToGiftCertificateResponse(updatedGiftCertificate);
