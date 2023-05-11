@@ -23,12 +23,12 @@ import ru.clevertec.ecl.listener.OrderListener;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
-@Builder
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "orders")
 @EntityListeners(OrderListener.class)
 public class Order {

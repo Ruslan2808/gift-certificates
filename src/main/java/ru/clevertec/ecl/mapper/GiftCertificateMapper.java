@@ -22,5 +22,6 @@ public interface GiftCertificateMapper {
 
     @Mapping(target = "tags", ignore = true)
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
-    void mapUpdateFieldsToGiftCertificate(GiftCertificateRequest giftCertificateRequest, @MappingTarget GiftCertificate giftCertificate);
+    void mapUpdateFieldsToGiftCertificate(GiftCertificateRequest giftCertificateRequest,
+                                          @MappingTarget GiftCertificate giftCertificate);
 }

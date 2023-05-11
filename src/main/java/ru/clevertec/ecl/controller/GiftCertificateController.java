@@ -69,7 +69,8 @@ public class GiftCertificateController {
     }
 
     @DeleteMapping("{id}")
-    public void deleteById(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteById(@PathVariable Long id) {
         giftCertificateService.deleteById(id);
+        return ResponseEntity.ok().build();
     }
 }

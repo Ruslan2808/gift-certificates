@@ -26,12 +26,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.ArrayList;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
-@Builder
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "gift_certificates")
 @EntityListeners(GiftCertificateListener.class)
 public class GiftCertificate {
