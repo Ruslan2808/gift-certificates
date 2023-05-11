@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "price": 480.0,
+    "date": "2023-05-08T15:30:30.146609",
+    "giftCertificate": {
+      "id": 1,
+      "name": "Beauty",
+      "description": "Beauty gift certificate",
+      "price": 480.0,
+      "duration": 180,
+      "createDate": "2023-05-06T19:41:14.325596",
+      "lastUpdateDate": "2023-05-08T15:43:41.837196",
+      "tags": [
+        {
+          "id": 1,
+          "name": "beauty"
+        }
+      ]
+    }
+  }
+]
