@@ -27,7 +27,7 @@ public class OrderTestData {
             .build();
 
     public static OrderRequest buildBeautyOrderRequest() throws IOException {
-        InputStream json = load("__files/order/beauty_order.json");
+        InputStream json = load("__files/order/beauty_order_request.json");
         return objectMapper.readValue(json, OrderRequest.class);
     }
 
