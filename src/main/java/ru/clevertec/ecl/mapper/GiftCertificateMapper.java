@@ -15,6 +15,7 @@ import java.util.List;
 
 @Mapper(uses = TagMapper.class)
 public interface GiftCertificateMapper {
+
     GiftCertificate mapToGiftCertificate(GiftCertificateRequest giftCertificateRequest);
     GiftCertificate mapToGiftCertificate(GiftCertificateFilter giftCertificateFilter);
     GiftCertificateResponse mapToGiftCertificateResponse(GiftCertificate giftCertificate);

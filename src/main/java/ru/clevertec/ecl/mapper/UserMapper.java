@@ -13,6 +13,7 @@ import java.util.List;
 
 @Mapper(uses = OrderMapper.class)
 public interface UserMapper {
+
     User mapToUser(UserRequest userRequest);
     User mapToUser(UserFilter userFilter);
     UserResponse mapToUserResponse(User user);

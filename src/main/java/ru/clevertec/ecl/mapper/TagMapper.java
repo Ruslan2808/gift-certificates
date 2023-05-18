@@ -11,6 +11,7 @@ import java.util.List;
 
 @Mapper
 public interface TagMapper {
+
     Tag mapToTag(TagRequest tagRequest);
     Tag mapToTag(TagFilter tagFilter);
     TagResponse mapToTagResponse(Tag tag);

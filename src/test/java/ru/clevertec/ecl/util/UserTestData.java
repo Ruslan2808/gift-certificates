@@ -30,6 +30,11 @@ public class UserTestData {
         return objectMapper.readValue(json, UserRequest.class);
     }
 
+    public static UserRequest buildAlexUserRequest() throws IOException {
+        InputStream json = load("__files/user/alex_user_request.json");
+        return objectMapper.readValue(json, UserRequest.class);
+    }
+
     public static User buildIvanovUser() throws IOException {
         InputStream json = load("__files/user/ivanov_user.json");
         return objectMapper.readValue(json, User.class);
@@ -43,6 +48,11 @@ public class UserTestData {
 
     public static UserResponse buildIvanovUserResponse() throws IOException {
         InputStream json = load("__files/user/ivanov_user.json");
+        return objectMapper.readValue(json, UserResponse.class);
+    }
+
+    public static UserResponse buildAlexUserResponse() throws IOException {
+        InputStream json = load("__files/user/alex_user.json");
         return objectMapper.readValue(json, UserResponse.class);
     }
 

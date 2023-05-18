@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+import org.springframework.data.repository.query.Param;
 import ru.clevertec.ecl.entity.Tag;
 
 import java.util.Optional;
@@ -39,5 +40,5 @@ public interface TagRepository extends JpaRepository<Tag, Long> {
             WHERE tag_id = :id
             """,
             nativeQuery = true)
-    void deleteGiftCertificateRelationsById(Long id);
+    void deleteGiftCertificateRelationsById(@Param("id") Long id);
 }

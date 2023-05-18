@@ -14,13 +14,17 @@
     "name": "Beauty",
     "description": "Beauty gift certificate",
     "price": 480.0,
-    "duration": 180,
+    "duration": 365,
     "createDate": "2023-05-06T19:41:14.325596",
     "lastUpdateDate": "2023-05-08T15:43:41.837196",
     "tags": [
       {
         "id": 1,
         "name": "beauty"
+      },
+      {
+        "id": 2,
+        "name": "relax"
       }
     ]
   }

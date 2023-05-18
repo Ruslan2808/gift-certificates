@@ -12,6 +12,7 @@ import java.util.List;
 
 @Mapper(uses = GiftCertificateMapper.class)
 public interface OrderMapper {
+
     Order mapToOrder(OrderFilter orderFilter);
     OrderResponse mapToOrderResponse(Order order);
     OrderUserResponse mapToOrderUserResponse(User user);

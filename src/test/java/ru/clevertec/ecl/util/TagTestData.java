@@ -23,6 +23,11 @@ public class TagTestData {
         return objectMapper.readValue(json, TagRequest.class);
     }
 
+    public static TagRequest buildSpaTagRequest() throws IOException {
+        InputStream json = load("__files/tag/spa_tag_request.json");
+        return objectMapper.readValue(json, TagRequest.class);
+    }
+
     public static Tag buildBeautyTag() throws IOException {
         InputStream json = load("__files/tag/beauty_tag.json");
         return objectMapper.readValue(json, Tag.class);
@@ -41,6 +46,16 @@ public class TagTestData {
 
     public static TagResponse buildBeautyTagResponse() throws IOException {
         InputStream json = load("__files/tag/beauty_tag.json");
+        return objectMapper.readValue(json, TagResponse.class);
+    }
+
+    public static TagResponse buildRelaxTagResponse() throws IOException {
+        InputStream json = load("__files/tag/relax_tag.json");
+        return objectMapper.readValue(json, TagResponse.class);
+    }
+
+    public static TagResponse buildSpaTagResponse() throws IOException {
+        InputStream json = load("__files/tag/spa_tag.json");
         return objectMapper.readValue(json, TagResponse.class);
     }
 
