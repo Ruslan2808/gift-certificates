@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "Beauty",
+    "description": "Beauty gift certificate",
+    "price": 50.0,
+    "duration": 365,
+    "createDate": "2023-05-06T19:41:31.707816",
+    "lastUpdateDate": "2023-05-06T19:41:31.707816",
+    "tags": [
+      {
+        "id": 1,
+        "name": "beauty"
+      },
+      {
+        "id": 2,
+        "name": "relax"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Health",
+    "description": "Health gift certificate",
+    "price": 75.0,
+    "duration": 365,
+    "createDate": "2023-05-06T19:42:05.707901",
+    "lastUpdateDate": "2023-05-07T11:50:06.009843",
+    "tags": [
+      {
+        "id": 2,
+        "name": "relax"
+      },
+      {
+        "id": 3,
+        "name": "health"
+      }
+    ]
+  }
+]
